@@ -3,6 +3,15 @@ from datetime import datetime
 from config import *
 import pandas as pd, numpy as np, json, os
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+MY_API_KEY = os.getenv('MY_API_KEY')
+MY_USERNAME = os.getenv('MY_USERNAME')
+MY_PASSWORD = os.getenv('MY_PASSWORD')
+
 ############################################ ENDPOINT Fonksiyonlari ##################################################
 
 ### Emir  Bilgisi
